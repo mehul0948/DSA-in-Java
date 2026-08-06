@@ -601,3 +601,89 @@ public class Patterns{
 **********
 
 */
+
+// Pattern no 20
+/*
+import java.util.Scanner;
+
+public class Patterns{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+
+        for(int i=1;i<=2*n-1;i++){
+            int stars=2*n-1;
+            //stars
+            for(int j=1;j<=stars;j++){
+                System.out.print("*");
+            }
+            //space
+
+            //stars
+            for(int j=1;j<=stars;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+
+        }
+    }
+}
+*/
+
+// Pattern no 21
+
+/*
+import java.util.Scanner;
+
+public class Patterns{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if (i==1||j==1||i==n||j==n) {
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        sc.close();
+    }
+}
+
+//                                               >>             Output             <<
+
+*****
+*   *
+*   *
+*   *
+*****
+
+*/
+
+import java.util.Scanner;
+
+public class Patterns{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if (i==1||j==1||i==n||j==n) {
+                    System.out.print(n);
+                }
+                else{
+                
+                    System.out.print(n);
+                }
+
+            }
+            System.out.println();
+        }
+        sc.close();
+    }
+}
