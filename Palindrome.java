@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Solution {
     public boolean isPalindrome(int x) {
         int original = x;
@@ -18,7 +20,13 @@ class Solution {
 
 public class Palindrome{
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value ");
+        int y = sc.nextInt();
         Solution obj = new Solution();
-        System.out.println(obj.isPalindrome(222));
+        System.out.println(obj.isPalindrome(y));
+
+        sc.close();
+
     }
 }
