@@ -1,16 +1,25 @@
 // Reverse the numbers from the input which is giver by the user
 
-import java.util.*;
+class Solution {
+    public int reverse(int x) {
+        int revNum = 0;
+        if (x >= Integer.MIN_VALUE && x <= Integer.MAX_VALUE) {
+        while (x > 0 || x < 0) {
+            int lastDigit = x % 10;
+            revNum = revNum * 10 + lastDigit;
+            x = x / 10;
+        }
+        return revNum;
+        }
+        else{
+            return 0;
+        }
+    }
+}
 
 public class Reverse_the_numbers {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Digits");
-        int n=sc.nextInt();
-        int revnum=0;
-        while (n>0) {
-            n=n%10;
-            System.out.print(n);
-        }
+        Solution obj = new Solution();
+        System.out.println(obj.reverse(-559809954));
     }
 }
